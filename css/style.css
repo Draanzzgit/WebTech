@@ -1,0 +1,325 @@
+/* Bagian Banner dan Background */
+.banner {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 70vh;
+}
+
+/* Brand Slider */
+.brands-slider {
+    display: flex;
+    justify-content: center; /* Mengubah ke center agar item berada di tengah */
+    width: 95%;
+    gap: 40px;
+}
+
+.brands-slider .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brands-slider .brand img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    opacity: 1; /* Pastikan gambar muncul langsung */
+    transform: scale(1);
+    animation: fadeInZoom 1s ease-out forwards;
+}
+
+/* Animasi FadeInZoom */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Mengangkat kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+}
+
+/* Responsif pada ukuran layar kecil */
+@media (max-width: 768px) {
+    .brands-slider .brand {
+        width: 80px;
+        height: 80px;
+    }
+
+    .brands-slider .brand img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
+/* Styling untuk teks utama */
+.main-color h2 {
+    font-size: 2rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #000;
+}
+
+/* Brands Section */
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.brands-slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.brands-slider .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brands-slider .brand img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.brands-slider .brand:hover {
+    transform: scale(1.1);
+}
+
+/* Animasi masuk pada logo brand */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.brands-slider .brand img {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-out forwards;
+}
+
+/* Styling untuk ikon layanan */
+.icon-service {
+    width: 90px;
+    height: 90px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.icon-service:hover {
+    transform: scale(1.1);
+}
+
+.bi-bicycle {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.content-sosialmedia {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.row div {
+    border: none;
+}
+
+h2.text-center {
+    margin-bottom: 16px;
+}
+
+/* Atur container untuk memenuhi lebar */
+.brands-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Atur slider agar memenuhi sisi kanan dan kiri */
+.brands-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 95%;
+}
+
+/* Atur ukuran logo lebih besar */
+.brands-slider .brand img {
+    max-width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-out forwards;
+}
+
+/* Efek hover pada logo */
+.brands-slider .brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* CSS untuk membuat gambar banner */
+.banner-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Untuk memastikan gambar tidak melampaui batas */
+  }
+  
+  .banner-image {
+    width: 100%; /* Gambar memenuhi lebar */
+    height: auto; /* Menjaga proporsi gambar */
+    max-height: 300px; /* Menentukan batas tinggi gambar */
+    object-fit: cover; /* Menjaga gambar tetap terisi dengan baik dalam kontainer */
+  }
+  
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 10px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #f1bc0d;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}
